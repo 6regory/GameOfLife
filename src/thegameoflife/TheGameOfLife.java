@@ -12,8 +12,8 @@ package thegameoflife;
  */
 public class TheGameOfLife {
 
-    static int rows = 10;
-    static int cols = 10;
+    static int rows = 100;
+    static int cols = 100;
     public static boolean[][] grid = new boolean[rows][cols];
 
     /**

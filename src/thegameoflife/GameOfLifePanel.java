@@ -23,15 +23,15 @@ public class GameOfLifePanel extends javax.swing.JPanel {
     
     public GameOfLifePanel() {
         initComponents();
-        grid[2][2] = true;
-        grid[3][2] = true;
-        grid[4][2] = true;
+        grid[49][50] = true;
+        grid[50][50] = true;
+        grid[51][50] = true;
     }
 
     public void paintComponent(Graphics g) {
         int x = 0;
         int y = 0;
-        //TheGameOfLife.grid[0][0];
+        
         for (int c = 0; c < grid.length; c++) {
             for (int r = 0; r < grid[0].length; r++) {
                 if (grid[c][r]) {
@@ -39,9 +39,8 @@ public class GameOfLifePanel extends javax.swing.JPanel {
                 } else {
                     g.setColor(Color.black);
                 }
-                g.fillRect(x, y, 7, 5);
+                g.fillRect(x, y, 7, 7);
                 x += 7;
-
             }
             x = 0;
             y += 7;
